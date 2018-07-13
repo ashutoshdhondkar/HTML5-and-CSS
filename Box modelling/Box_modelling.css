@@ -1,0 +1,14 @@
+p{
+    padding:50px 70px 100px 150px; /* padding: top right bottom left */
+    background-color: yellow;
+    border-top: 10px dotted blue;   /* border: border-width border-style border-color*/
+    border-left: 10px dashed blue;
+    border-right: 10px ridge red;
+    border-bottom: 10px solid blue;
+    
+    margin:10px 100px 60px 100px;                 /* margin: top right bottom left */
+}
+body{
+    margin:0px;
+    padding:0px;
+}
