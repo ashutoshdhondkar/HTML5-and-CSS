@@ -1,0 +1,20 @@
+p{
+    color:blue;
+}
+.unique{
+    color:red;
+}
+.orange{
+    color:aqua;
+    text-decoration:underline;
+}
+.github{
+    color:blueviolet;
+}
+.head{
+    font-family:bookman old style;
+    font-weight:bold;
+    font-size:30px;
+    font-style: italic;
+    color:violet;   
+}
