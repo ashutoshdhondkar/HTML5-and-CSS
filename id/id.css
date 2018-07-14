@@ -1,0 +1,21 @@
+/* id's begin with # */
+
+#item1{
+    color:blue;
+}
+#item2{
+    background-color:yellow;
+    color:blue;
+    display:inline;
+}
+#item3{
+    color:deeppink;
+}
+#item4{
+    color:forestgreen;
+    font-family:bookman old style;
+    font-style:italic;
+}
+#p{
+    color:red;
+}
