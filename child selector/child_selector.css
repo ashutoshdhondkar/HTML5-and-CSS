@@ -1,0 +1,21 @@
+p{
+    color:red;
+}
+
+hr.style1{
+
+    border-top: 5px dashed blue;
+}
+
+div p{
+    color: deeppink;
+}
+
+div h1{
+    font-family:monotype corsiva;
+    font-weight:400;
+    color: aqua;
+}
+h1{
+    color:red;
+}
