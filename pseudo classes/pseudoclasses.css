@@ -1,0 +1,17 @@
+
+#unique p:first-child{
+    color:red;
+}
+#unique p:last-child{
+    color:red;
+}
+#unique p:before{
+    content:"Hello";
+}
+#unique p:after{
+    content:" Ashutosh";
+}
+#parent p:nth-child(even){
+    color:blue;
+    background-color: yellow;
+}
