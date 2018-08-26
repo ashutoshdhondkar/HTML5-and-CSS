@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EFFECTS</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <style>
+            img{
+                height:480px;
+                width:640px;
+                border:5px solid blue;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $('.btn1').click(function(){
+                    $('img').hide();
+                });
+                $('.btn2').click(function(){
+                    $('img').show();
+                });
+                $('.btn3').click(function(){
+                    /*
+                    
+                    The main problem with toggle is that
+                    it does not function properly on double click
+                    Thus we make use of stop and delay functions
+                    to make it work fine
+                    
+                    */
+                    $('img').stop().fadeToggle(1000);
+                    // method-1
+                    /*
+                        it will work only when clicked once
+                    */
+                });
+//                $('img').hover(function(){
+//                    $('img').toggle(1000);
+//                });
+//                $('.btn4').click(function(){
+//                    $('img').fadeIn(1000);
+//                });
+                $('.btn4').click(function(){
+                    $('img').fadeToggle(1000);
+                });
+                $('.btn5').click(function(){
+                    $('img').fadeOut(10000);
+                });
+                $('.btn6').click(function(){
+                    /* fadeTo(delay,final_opacity) */
+                    $('img').fadeTo(2000,'0.45');
+                });
+                $('.btn7').click(function(){
+                    $('img').stop();
+                });
+                $('p').click(function(){
+                    $(this).fadeOut(1000);
+                });
+                $('*').click(function(){
+                    $('*').fadeOut(10000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img src="images/cat.jpg" alt="This is a cat"><br>
+        <input type="button" value="hide image" class="btn1">
+        <br>
+        <input type="button" value="show image" class="btn2">
+        <br>
+        <input type="button" value="hide/show" class="btn3">
+        <br>
+        <input type="button" value="fade in" class="btn4">
+        <br>
+        <input type="button" value="fade out" class="btn5">
+        <br>
+        <input type="button" value="fade to" class="btn6">
+        <br>
+        <input type="button" value="stop" class="btn7">
+        <br>
+        
+        <h1>Welcome to event handler</h1>
+        <h3>Click on the event to remove the event</h3>
+        <br>
+        <p>Wake up at 8am</p>
+        <p>Go to Chembur</p>
+        <p>Return Home</p><br>
+    </body>
+</html>
