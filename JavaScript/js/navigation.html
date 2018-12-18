@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Navigation bar</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                }
+                else{
+                    $('nav').removeClass('black');
+                }
+            });
+        </script>
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+                font-family: Quicksand;
+            }
+            nav{
+                position:fixed;
+                top=0;
+                left=0;
+                width:100%;
+                height:100px;
+                padding:10px 100px;
+                box-sizing:border-box;
+                transition:.3s;
+            }
+            nav.black{
+                background:rgba(0,0,0,0.8);
+                height:100px;
+                padding:10px 100px;
+            }
+            nav.logo{
+                padding:22px 20px;
+                height: 80px;
+                float : left;
+                font-size : 24px;
+                transition:.3s;
+            }
+            nav.black.logo{
+                color:#fff;
+            }
+            nav ul{
+                list-style:none;
+                float:right;
+                margin:0px;
+                padding:0px;
+                display:flex;
+            }
+            nav ul li{
+                list-style: none;
+            }
+            nav ul li a{
+                line-height: 80px;
+                color:black;
+                padding:12px 30px;
+                text-decoration:none;
+                text-transform: uppercase;
+                transition: .3s;
+            }
+            nav.black ul li a{
+                color:#fff;
+            }
+            nav ul li a:focus{
+                outline:none;
+            }
+            nav ul li a.active{
+                background:black;
+                color:#fff;
+                border-radius: 6px;
+            }
+            section.sec1{
+                width:100%;
+                height:100vh;
+                background-image:url(images/cat.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .content{
+                margin-top:80px;
+            }
+            .content p{
+                width:900px;
+                margin:38px auto;
+                text-align: justify;
+                font-size:20x;
+                line-height: 30px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">LOGO</div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active">Log in</a></li>
+                </ul>
+            </nav>
+            <section class="sec1"></section>
+            <section class="content"></section>
+                <p>Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.</p>
+                <p>Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.</p>
+                <p>Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.</p>
+                <p>Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.Welcome to the English-language Wiktionary, a collaborative project to produce a free-content multilingual dictionary. It aims to describe all words of all languages using definitions and descriptions in English.
+                Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, a rhyme guide, phrase books, language statistics and extensive appendices. We aim to include not only the definition of a word, but also enough information to really understand it. Thus etymologies, pronunciations, sample quotations, synonyms, antonyms and translations are included.
+                Wiktionary is a wiki, which means that you can edit it, and all the content is dual-licensed under both the Creative Commons Attribution-ShareAlike 3.0 Unported License and the GNU Free Documentation License. Before you contribute, you may wish to read through some of our help pages, and bear in mind that we do things quite differently from other wikis. In particular, we have strict layout conventions and inclusion criteria. Learn how to start a page, how to edit entries, experiment in the sandbox and visit our Community Portal to see how you can participate in the development of Wiktionary.</p>
+        </div>
+    </body>
+</html>

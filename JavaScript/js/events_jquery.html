@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Events in JQuery</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+          /* events*/
+          $(document).ready(function(){
+//              $('.new').click(function(){
+//                  $('p').fadeToggle(1000);
+//                  alert("Single click");
+//              });
+//              $('.new').dblclick(function(){
+//                  $('p').fadeToggle(1000);
+//                  alert("double click")
+//                    $('.new').mouseover(function(){
+//                        $('p').fadeToggle(100);
+//                        
+//                    });
+//                    $('.new').mouseleave(function(){
+//                        $('p').fadeToggle(1000);
+//                    })
+//                    $('.new').mousemove(function(){
+//                        $('p').fadeToggle(1000);
+//                    })
+              
+//               keyboard events
+//                    $('input').blur(function(){
+//                        $('input').css('background','yellow');
+//                    });
+//              // same as focusin = focus,focusout=blur
+//                    $('input').focus(function(){
+//                        $('input').css('background','white');
+//                    });
+              // keydown
+//                    $('.input').keypress(function(){
+//                        $('.input').css('background','white');
+//                    });
+//                  $('input').keydown(function(){
+//                        $('input').css('background','white');
+//                  });
+              $('.input').select(function(){
+                        $('.input').css('background','white');
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <input type="text" class="new" value="Enter text">
+        <br><br>
+        <input type= "button" value="click me" class="input">
+        <p>Hello world</p>
+    </body>
+</html>

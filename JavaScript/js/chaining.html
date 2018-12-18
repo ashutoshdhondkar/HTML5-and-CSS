@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chaining in jQuery</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('button').click(function(){
+                    /* applying chaining now for animated_div */
+//            $('.animated_div').css('background','green').slideUp(5000).slideDown(5000).css('background','yellow');
+//                });
+                $('.animated_div').css('background-color','green')
+                    .slideUp(5000)
+                    .css('color','red')
+                    .slideDown(5000);
+                })
+            });
+        </script>
+        <style>
+            .animated_div{
+                background:yellow;
+                border:2px solid blue;
+                width:300px;
+                height:500px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <button>Click Me for special effects</button>
+        <br><br>
+        <div class="animated_div">
+            <p align="center">Hello World</p>
+        </div>
+    </body>
+</html>

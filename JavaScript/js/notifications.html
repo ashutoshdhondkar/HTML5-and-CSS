@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Notificaton</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <style>
+            .rt{
+                height:50px;
+                width:300px;
+                background-color:pink;
+                color:blue;
+                border: 2px solid yellow;
+            }
+            .ry{
+                height:70px;
+                width:300px;
+                background:yellow;
+                color:red;
+                border:2px solid blue;
+                display:none;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $('.rt').click(function(){
+                    $('.ry').slideToggle('slow');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="rt">
+            <p>Click Here to show notification</p>
+        </div>
+        <br>
+        <div class="ry">
+            <p>Congratulations! you are fail</p>
+        </div>
+    </body>
+</html>

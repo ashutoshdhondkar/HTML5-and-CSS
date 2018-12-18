@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scroll left</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('button').click(function(){
+                    alert($('div').scrollLeft());
+                });
+            });
+        </script>
+        <style>
+            div{
+                background-image : linear-gradient(to left,#99AAAB,#DAE0E2);
+                border-radius: 10px;
+                border:2px solid black;
+                width:4cm;
+                overflow-x: scroll;
+            }
+            button{
+                padding:10px;
+                font-family: cursive;
+                font-size:0.5cm;
+                border-radius: 10px;
+                border:none;
+                background-image:linear-gradient(to top,#6ab04c,#45CE30,#6ab04c);
+                margin-left:5cm;
+            }
+            button:focus{
+                outline: none;
+            }
+            button:hover{
+                transform: scale(1.5);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            Detractyetdelightwrittenfartherhisgeneral.Ifinsobredatdareroselosegood.Feelandmaketworealmiss 
+        </div>
+        <button>Click</button>
+    </body>
+</html>

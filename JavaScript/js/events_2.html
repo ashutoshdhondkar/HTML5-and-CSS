@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Events</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // using bind event
+                // binding events and actions together
+                // bind('select_event',function)
+//                $('.input').bind('select',function(){
+//                    $('.input').css('background','yellow');
+//                    alert("Seected");
+//                })
+                // bind is same as on 
+                // only difference is on is onetime usable
+                // using unbind
+                $('p').mouseup(function(){
+                    $(this).fadeToggle(1000);
+                });
+                
+                // removing bind effect
+                // similar to off event
+                $('button').click(function(){
+                    $('p').unbind();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- <input type="text" class="input"> -->
+        <p>Hello world</p>
+        <p>I am web developer</p>
+        <button>Remove event</button>
+    </body>
+</html>

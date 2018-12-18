@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pretend</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).bind('contextmenu',function(e){
+                return false;
+            });
+            
+            $(document).ready(function(){
+                $('#btn').click(function(){
+                    $('div').prepend("<h4>hello wordl</h4>");
+                });
+            });
+        </script>
+        <style>
+            div{
+                height:5cm;
+                width:5cm;
+                border: 2px solid blue;
+                outline : gray solid 2px;
+                background:linear-gradient(to bottom , yellow,pink);
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn">Click me</button><br>
+        <div></div><br>
+        <div></div><br>
+        <div></div><br>
+    </body>
+</html>

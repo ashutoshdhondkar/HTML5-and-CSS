@@ -1,0 +1,35 @@
+<!-- using stop and delay function -->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fade in / out error</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $('img').stop().fadeToggle(1000);
+                })
+                
+                $('#fade').click(function(){
+                    $('img').stop();
+                });
+                
+                $("#delay_fade").click(function(){
+                    $('img').delay(5000).hide(2000);
+//                    hide after 5 secs
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <img src="images/lizard.jpg">
+        <br>
+        <input type="button" value="fadein / fade out" id="btn">
+        <input type="button" value="stop fading" id="fade">
+        <input type="button" value="delay fade" id="delay_fade">
+    </body>
+
+</html>

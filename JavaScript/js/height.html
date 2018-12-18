@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Height</title>
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster" rel="stylesheet">
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                
+                $('.btn1').click(function(){
+                    $('.messages').html("");
+                    $('.messages').append("The normal height is : " + $('.text').height()) ;
+                    $('.messages').css({'display' : 'block'});
+                });
+                
+                $('.btn2').click(function(){
+                    $('.messages').html("");
+                    $('.messages').append("The inner height is : " + $('.text').innerHeight());
+                    $('.messages').css({'display' : 'block'});
+                });
+                
+                $('.btn3').click(function(){
+                    $('.messages').html("");
+                    $('.messages').append("The outer height is : " + $('.text').outerHeight());
+                    $('.messages').css({'display' : 'block'});
+                });
+                
+                $('.messages').mouseleave(function(){
+                    $('.messages').css({'display' : 'none'});
+                });
+            });
+        </script>
+        <style>
+            button:focus{
+                outline-color: none;
+                outline-style: none;
+            }
+            .text{
+                font-family: 'Lobster', cursive;
+                height : 450px;
+                width : 100%;
+                border:2px solid red;
+                background-color:black;
+                color:white;
+                font-size:1cm;
+                padding : 10px;
+                width : 98.2%;
+                margin : 0px auto;
+                text-align: center;
+            }
+            p{
+                margin: 0px auto;
+            }
+            
+            
+            button{
+                background-image: linear-gradient(to top, #6ab04c,#badc57,#6ab04c);
+                color:black;  
+                text-align: center;
+                font-family: ;
+                padding:10px;
+                border-radius:7px;
+                border:none;
+                margin : 1cm 0.5cm;
+            }
+            
+            button:hover{
+                transform: scale(1.5);
+                box-shadow: 2px 2px gray;
+            }
+            .messages{
+                height : 3cm;
+                font-family: 'Kaushan Script' , Helevetica;
+                font-size:1cm;
+                text-align: center;
+                
+                padding : 10px auto;
+            }
+            .buttons{
+                text-align: center;
+/*                width:30%;*/
+                display: block;
+                margin:0px auto;
+            }
+            *{
+                margin : 0px;
+                padding: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text">
+            <p>
+                Perhaps you have wondered how predictable machines like computers can generate randomness. In reality, most random numbers used in computer programs are pseudo-random, which means they are generated in a predictable fashion using a mathematical formula. This is fine for many purposes, but it may not be random in the way you expect if you're used to dice rolls and lottery drawings.
+
+                RANDOM.ORG offers true random numbers to anyone on the Internet. The randomness comes from atmospheric noise, which for many purposes is better than the pseudo-random number algorithms typically used in computer programs. People use RANDOM.ORG for holding drawings, lotteries and sweepstakes, to drive online games, for scientific applications and for art and music. 
+                
+            </p>
+        </div>
+        <div class = "buttons">
+            <button class="btn1">Normal Height</button>
+            <button class="btn2">Inner Height</button>
+            <button class="btn3">Outer Height</button>
+        </div>
+        <div class="messages" style="display:none"></div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animation</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <style>
+            .abc{
+                height:300px;
+                width:300px;
+                background-color:blue;
+                border-radius:40px;
+                color:black;
+                font-weight:bold;
+                position:relative;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                
+                $('.abc').mouseenter(function(){
+                    $('.abc').delay('slow').animate({
+                        fontSize:'100px',
+                        left:'300px',
+                        top:'300px',
+                    },10000);
+                });
+                $('.abc').mouseleave(function(){
+                    $('.abc').delay('slow').animate({
+                        left:'0px',
+                        fontSize:'20px',
+                        top:'0px',
+                    },1000)
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <div class="abc">
+            <p align="center"> welcome to my div tag</p>
+        </div>
+    </body>
+</html>

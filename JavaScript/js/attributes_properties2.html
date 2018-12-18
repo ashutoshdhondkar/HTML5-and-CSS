@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Attributes</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#add').click(function(){
+                    $('h1').attr({align:'center',
+                                  style:'color:red;'});
+                });
+                
+                $('#remove').click(function(){
+                    $('h1').removeAttr('align','center');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <button id="add">Click me</button>
+        <button id="remove">Remove attr</button>
+    </body>
+</html>

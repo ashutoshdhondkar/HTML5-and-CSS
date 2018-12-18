@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>spc</title>
+        <script src = "JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            /* Disables the right click button for user */
+            $(document).bind('contextmenu',function(e){
+                return false;
+            });
+            
+            $(document).ready(function(){
+                /* handling button 1 */
+                $("#btn1").click(function(){
+                    $('div').before(function(e){
+                        return "<h3>The below box number is : "+ (e+1)+"</h3>" ;
+                    });
+                });
+                
+                /* handling button 2 */
+                $("#btn2").click(function(){
+                    $('div').after(function(e){
+                        return "<h3>The above box number is : "+ (e+1)+"</h3>" ;
+                    });
+                });
+            });
+        </script>
+        <style>
+            div{
+                height:5cm;
+                background: yellow;
+                width:5cm;
+                border : 2px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn1">click me before</button>
+        <button id="btn2">click me after</button>
+        
+        <br><br>
+        <div></div><br>
+        <div></div><br>
+        <div></div><br>
+    </body>
+</html>

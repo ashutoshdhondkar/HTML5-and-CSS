@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Changing box</title>
+        <link rel=icon href="images/tp.ico">
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <!-- start writing your css file -->
+        <style>
+            .dancing_div{
+                height:50px;
+                width:50px;
+                position: absolute;
+                background: red;
+                border-radius:30px;
+            }
+        </style>
+        <!-- start writing your jquery over here -->
+        <script>
+            $(document).ready(function(){
+                var div = $('.dancing_div');
+                $('#start').click(function(){
+                    div.animate({height:'250px'},'slow');
+                    div.animate({width:'250px'},'slow');
+                    div.queue(function(){
+                        div.css('background','blue');
+                        div.dequeue();
+                    })
+                    div.animate({height:'50px'},'slow');
+                    div.animate({width:'50'},'fast');
+                });
+                $('#stop').click(function(){
+                    $('.dancing_div').clearQueue();
+                    $('span').text($('.dancing_div').queue().length);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="start">Click me to start</button>
+        <button id="stop">Stop</button>
+        <p>lenght of queue : <span></span></p>
+        <br>
+        <br><br>
+        <div class="dancing_div"></div>
+    </body>
+
+</html>

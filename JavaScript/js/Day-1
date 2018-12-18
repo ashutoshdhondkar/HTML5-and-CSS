@@ -1,0 +1,136 @@
+Basic Syntax:
+	$(selector).action();
+
+
+timing bydefault is 400ms
+
+$ can be used instead of jQuery
+Day - 1:
+first line compulsary
+$(document).ready(//function);
+
+for onclick event
+$(selector).click(function(){
+	alert("CLicked");
+})
+
+fadeOut(1000,final_opacity) //1000 is in milliseconds
+fadeIn()
+fadeToggle()
+'*' represents all tags in the page
+
+this:- jispe click karunga vo hi select hoga like self in python
+
+$().css('property','values');
+
+stop() is used to stop the execution and again fadein the image i.e.
+stop the currently running execution on the matched elements
+see fadein_out.html for better understanding
+
+delay() is used to delay execution
+
+$(tag).text("any text");
+
+$(tag).queue() : gives all the functions that are applied on the selected dag
+$(tag).dequeue()
+$(tag).clearQueue();
+
+$().animate({property,'value'},time);
+
+callback functions in jQuery
+
+chaining : using multiple effects/actions/methods together on a tag;
+example:
+$('.animated_div').css('background-color','green').slideUp(5000).css('color','red').slideDown(5000);
+
+.css
+3 methods
+	.css('css property','value'); // single
+	
+	.css({'property' :'value',
+			'propert' : 'value',
+			}); // multiple 
+
+	.css('border-width',function(){
+		// no idea
+	});
+
+$(tag).html :selected elements ke contents set karta hai
+ex: $().html(function(){})	# ek daach use hto 
+
+$().addClass() : adds one or more class names to selected elements
+
+$().removeClass() : removes one or more class names from selected elements
+
+$().toggleClass() : toggles between add and remove class
+
+
+$().remove(tag);
+	removes all the selected elements including data,events,child,etc.
+$().detach();
+	removes only elements and not data and events
+$().empty();
+
+
+video : 23
+$().attr(); and $().prop(); are same
+
+$().removeAttr('attr_to_be_removed','value') : removes the selected property 
+
+$().removeProp(); will remove the entire element
+remove is not working properly in jq 3.3.1.min.js
+
+
+video : 24
+# slightly different from normal jq syntax
+# manje ki <p> la replace kara <h2>web development </h2> sobat
+$('<h2>web development</h2>').replaceAll('p');
+
+# same as normal jquery
+# replace this with new content
+$().replaceWith();
+
+video : 25
+very very easy 
+before() : inserts data before a particular element
+
+after() : inserts data after a particular element
+
+video : 26
+
+# usual syntax
+prepend() : adds contents to the beginning of selected tag...
+
+# unusual syntax
+prependTo() : 
+
+
+video : 27
+append() # add contents at end of selected tag
+
+video : 28
+
+clone(true or false)
+true : clone along with all the attributes and styling
+false : only clone without any attribute or styling
+
+video : 29
+height() : gives the height of the tag
+innerHeight() : gives the height along with padding (not border)
+outerHeight() : gives the height along with outer border
+
+
+video : 30
+width() : 
+innerWidth() : 
+outerWidth() : 
+
+video : 31
+scrollleft() : sets or returns the horizontal scrollbar position of selected elements
+
+video : 32
+scrollTop() : sets or returns the vertical scrollbar position of selected elements
+
+video : 33
+text() : sets or returns only text . it considers elements as text eg . <h1> is considered as text and displayed as text on browser
+

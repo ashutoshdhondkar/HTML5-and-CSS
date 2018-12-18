@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Attributes|remove|properties</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').mouseenter(function(){
+                    $('img').attr('width','1000px');
+                });
+                $('#btn2').mouseleave(function(){
+                    $('img').removeAttr('width','1000');
+                });
+                $('#btn3').click(function(){
+                    $('img').removeProp('width','1000');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1">Add property</button>
+        <button id="btn2">Remove Attribute</button>
+        <button id="btn3">Remove property</button>
+        <br><br>
+        <img src="images/cat.jpg" width="300px" alt="This is a cat">
+             
+    </body>
+</html>

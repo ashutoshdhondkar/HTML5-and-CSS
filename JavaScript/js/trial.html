@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nav Barr</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#first').mouseenter(function(){
+                    $('#cont').slideDown('slow');
+                    $(this).css('border-bottom','none');
+                    $('#fix').css('visibility','hidden');
+                });
+                $('p').mouseover(function(){
+                    $(this).css('background','pink');
+                });
+                $('p').mouseleave(function(){
+                    $(this).css('background','orange');
+                });
+                $('#cont').mouseleave(function(){
+                    $('#cont').slideUp('slow');
+                    $('li').css('border-bottom','2px solid blue');
+                    $('#fix').delay(5000).css('visibility','visible');
+                });
+                
+            });
+        </script>
+        <style>
+            li{
+                float:left;
+                margin-left:10px;
+                list-style: none;
+                background-color:yellow;
+                width:100px;
+                border:2px solid blue;
+                padding:0px auto;
+                height:30px;
+                text-align: center;
+            }
+            #cont{
+                clear:both;
+                border:2px solid blue;
+                width:100px;
+                height:auto;
+                background: orange;
+                display: none;
+                margin-left:50px;
+            }
+            p{
+                font-weight: bold;
+                font-size:18px;
+                text-align:center;
+                background-color:orange;
+                
+                display: block;
+            }
+            #fix{
+                position:fixed;
+                display:inline-block;
+                top:80px;
+                overflow: hidden;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li id="first">Home</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <br>
+        <div id="cont">
+            <p>Hello World</p>
+            <p>Python</p>
+            <p>HTML</p>
+            <p>css</p>
+            <p>JQuery</p>
+        </div>
+        <br>
+        <div id="fix">
+            welcome to my page
+        </div>
+    </body>
+</html>

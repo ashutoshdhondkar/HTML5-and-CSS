@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Classes</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#btn1').click(function(){
+                    $('p:first').addClass('new');
+                });
+                // on clicking button-2, this action should be performed
+                $('#btn2').click(function(){
+                    $('p:first').removeClass('new');
+                });
+                // on clicking button-3,toggling effect should be seen
+                $('#btn3').click(function(){
+                    $('p:first').toggleClass('new');
+                });
+            });
+        </script>
+        <style>
+            .new{
+                background:yellow;
+                border:2px solid blue;
+                height:300px;
+                width:300px;
+                border-radius:15px;
+                color:red;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn1">Add class</button>
+        <button id="btn2">Remove class</button>
+        <button id="btn3">Toggle Class</button>
+    
+        <p>Hello World</p>
+        <p>This is Ashutosh</p>
+    </body>
+</html>

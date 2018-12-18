@@ -1,0 +1,43 @@
+click()
+dblclick()
+blur()
+focus()
+focusin()
+focusout()
+hover()
+keydown()
+keypress()
+keyup()
+mousedown()
+mouseenter()
+mouseleave()
+mousemove()
+mouseout()
+mouseup()
+ready()
+resize()
+scroll()
+select()
+submit()
+bind()
+unbind()
+off()
+on()
+one()
+
+effects:
+ default timing parameter is 400 ms
+
+ $().hide(); // hide a particular tag
+ $().show(); // show hidden tag
+ $().toggle(); // show tag if hidden or vice versa
+
+ $().fadeIn(timing or 'slow'or'fast'); // fade in
+ $().fadeOut(timing); // fade out
+ $().fadeToggle(timing); // toggle 
+ $().fadeTo(timer,opacity) //fade till a particular opacity
+
+
+ $().delay();
+ $().stop(10).(); if time is provided then the tag will agaign
+ fade in after specified time

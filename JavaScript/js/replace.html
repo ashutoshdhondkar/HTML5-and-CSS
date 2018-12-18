@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="device = device-width">
+        <title>Replace contents</title>
+        <script src="JQuery/jquery-3.3.1.min.js"></script>
+        <script>
+            /* disable the right click button to for security purpose */
+            $(document).bind('contextmenu',function(e){
+                return false;
+            });
+            
+            /* actual jquery content start here */
+            $(document).ready(function(){
+                $('#btn1').click(function(){
+                    $("<h1>JQuery</h1>").replaceAll('p');
+                });
+                $('#btn2').click(function(){
+                    $('p').replaceWith("<h1>Hello Ashutosh</h1>");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1">replace all</button>
+        <button id="btn2">replace with</button>
+        <p>Hello Ashutosh nice to see you</p>
+    </body>
+</html>
