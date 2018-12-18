@@ -1,0 +1,139 @@
+<!-- login page for quiz -->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Python Quiz - Most searched quiz</title>
+        <script>
+            function validateLogin(){
+                for(var i=0;i<loginform.elements.length;i++){
+                    if(loginform.elements[i].value.length == 0){
+                        alert("username and password didn't matched");
+                        return false;
+                    }
+                }
+            }
+            
+            function validateRegistration(){
+                for(var i=0;i<registrationform.elements.length;i++){
+                    if(registrationform.elements[i].value.length == 0 && registrationform.elements[i].className == 'req'){
+                        alert("Please fill in all the * marked details");
+                        return false;
+                    }
+                }
+            }
+        </script>
+        <style>
+            .loginpanel{
+/*                width:100%;*/
+                margin:10px 20%;
+                padding:10px 0px;
+                
+                background-color:chartreuse;
+                text-align: center;
+                box-sizing: border-box;
+/*                background-size: cover;*/
+                border-radius:20px;
+                border:2px solid black;                
+            }
+            .loginpanel label{
+                width:50%;
+                padding-left:30%;
+                padding-right: 20%;
+                box-sizing: border-box;
+                text-align: center;
+                float:left;
+                font-size:20px;
+                font-weight:bold;
+            }
+            .loginpanel input{
+                padding:5px;
+                width:20%;
+                float:left;
+                border-radius:5px;
+                text-align: center;
+                border:2px solid black;
+            }
+            .loginpanel input[type="submit"]{
+                clear:both;
+                margin:10px 40%;
+                
+            }
+            body{
+                background-color:bisque; 
+                padding-top:30px;
+            }
+            *{
+                padding:0px;
+                margin:0px;
+            }
+            
+            .registrationpanel{
+                clear:both;
+                 margin:10px 20%;
+                padding:10px 0px;
+                
+                background-color:chartreuse;
+                text-align: center;
+                box-sizing: border-box;
+/*                background-size: cover;*/
+                border-radius:20px;
+                border:2px solid black;  
+            }
+            
+            .registrationpanel label{
+                width:50%;
+/*                padding-right:10%;*/
+/*                box-sizing: border-box;*/
+/*                float:left;*/
+/*
+                padding-left:10%;
+                padding-right:30%;
+*/
+/*                box-sizing: border-box;*/
+                text-align: center;
+/*                float:left;*/
+                font-size:20px;
+                font-weight:bold;
+            }
+            
+            .registrationpanel input{
+                width:50%;
+                padding:5px;
+/*                width:20%;*/
+/*                float:left;*/
+                border-radius:5px;
+                text-align: center;
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">PYTHON QUIZ</h1><br><br>
+        <div class = "loginpanel">
+            <form action="" method="" name="loginform">
+                <h2 align="center">Login Panel</h2><br><br>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="username" name="loginusername"><br><br><br>
+                <label for="password">Password</label>
+                <input type="password" name="loginpassword" id="password" placeholder="password"><br><br>
+                <input type="submit" value="login" onclick="validateLogin();" id="loginbutton"><br><br>
+            </form>
+        </div>
+        <br><br>
+        <div class="registrationpanel">
+            <form action = "" name="registrationform" method="">
+                <h2 align="center">Registration Panel</h2><br><br>
+                <label for="username">*Username</label><br><br>
+                <input type="text" id="username" placeholder="new username" name="username" class='req'><br><br>
+                <label for="password">*Password</label><br><br>
+                <input type="password" id="password" name="password" placeholder="new password" class='req'><br><br>
+                <label for="email">*email id</label><br><br>
+                <input type="email" id="email" name="email" placeholder="enter email address" class='req'><br><br>
+                <label for="phoneno">Phone no.</label><br><br>
+                <input type="tel" id="phoneno" name="phoneno" placeholder="phone number"><br><br><br><br>
+                <input type="submit" name="register" value="free register" onclick = "validateRegistration();"><br>
+            </form>
+        </div>
+    </body>
+</html>
