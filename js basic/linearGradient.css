@@ -1,0 +1,8 @@
+div{
+    background-color:yellow;
+    height:100px;
+    width:200px;
+    text-align: center;
+    padding-top:50px;
+    background-image:linear-gradient(to bottom,orange,white 30%,green);
+}

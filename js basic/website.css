@@ -1,0 +1,55 @@
+/* Get rid of default paddings and margins */
+
+*{  /* select all the elements */
+    margin:0px;
+    padding:0px;   
+}
+header,footer,nav,section,article,aside{
+    display:block;  /* Display as a block */
+}
+/* Centering website */
+.container{
+    width:1000px;
+    margin:0px auto;    /* margin 0px on top and bottom and auto on left and right*/
+}
+/* nav items beside logo */
+.logo{
+    float:left;
+}
+
+.top_nav{
+    float:left;
+    width:768px;
+}
+.top_nav ul li{
+    float:left;
+    padding:25px 20px;
+}
+.clear{
+    clear:both; /*force header to stop wrpping around image */
+}
+ul{
+    list-style-type:none;
+}
+.left_class{
+    float:left;
+    width:600px;
+}
+
+.right_class{
+    float:left;
+    padding-left:30px;
+}
+.page_footer{
+    clear:both;
+    padding-top:50px;
+    text-align: center;
+}
+
+aside div{
+    border:2px solid gray;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    margin:10px;
+}

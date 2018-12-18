@@ -1,0 +1,15 @@
+table{
+    border-collapse: collapse;
+    border:10px solid black;
+    cursor:none;
+}
+thead{
+    background-color:aqua;
+}
+tfoot{
+    background-color:chartreuse;
+}
+td,th{
+    padding:10px;
+    border:3px solid blue;
+}

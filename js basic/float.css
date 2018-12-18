@@ -1,0 +1,12 @@
+.pic{
+    float:right;
+    margin-right:10px;
+}
+
+#second{
+    clear:right;
+}
+body{
+    background-image:linear-gradient(to bottom,orange,white,green);
+    background-repeat: no-repeat;  
+}

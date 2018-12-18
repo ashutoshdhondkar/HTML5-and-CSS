@@ -1,0 +1,9 @@
+ul{
+    /*
+    list-style-position:outside;
+    outline-style: dashed;
+    */
+    /*list-style-image:url(tick.png);*/
+    list-style-type:circle;
+    line-height: 200%;
+}
