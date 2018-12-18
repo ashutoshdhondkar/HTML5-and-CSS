@@ -1,0 +1,91 @@
+*{
+    padding:0px;
+    margin:0px;
+    transition:0.2s;
+}
+.logo{
+    display: inline;
+    height:150px;
+    margin-top:20px;
+    margin-left:50px;
+    padding:20px; 
+    float:left;
+}
+body{
+    font-size:40px;
+/*    background-image: url('../images/wallpaper2.jpg');*/
+}
+nav ul li{
+    float:left;
+    list-style: none;
+/*    margin-right:5%;*/
+    padding:10px;
+    margin-right:40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding:10px;
+    font-family: 'Aladin';
+    font-weight: lighter;
+}
+nav ul li a:hover{
+    color:#ffff;
+    border-bottom: 2px solid #192A56;
+    background-color:#3498DB;
+    border-radius: 200px;
+}
+.options{
+    display: inline-block;
+/*    border:2px solid blue;*/
+    margin-top:50px;
+    margin-left:20%;
+}
+section{
+    clear: both;
+}
+
+section .section h1{
+    display: inline;
+    font-weight: lighter;
+/*    border:2px solid black;*/
+    position: absolute;
+    margin-left:2%;
+    top:50%;
+    left:50%;
+    transform: translate(-100%,-30%);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-family: 'Charm', cursive;
+    font-size:150%;
+    color:black;
+}
+.animate{
+    animation: animatemytag 1s infinite;
+}
+
+@keyframes animatemytag{
+    0%{color:red;}
+    25%{color:blue;}
+    50%{color:pink;}
+    100%{color:green;}
+/*
+    0%{color: red;}
+    25%{color: purple;}
+    50%{color: white;}
+    100%{color:purple;}
+*/
+}
+
+#login-form{
+    background-color:yellow;
+    font-size:20px;
+}
+
+#login-username,#login-password{
+    padding:5px;
+    border-radius:10px;
+    border:none;
+}

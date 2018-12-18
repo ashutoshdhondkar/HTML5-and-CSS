@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>QuizBook</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Charm|Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+        <script src="css/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.PNG" class="logo">
+            <nav>
+                <div id="login-form" class="modal">
+                    <form id="login_form">
+                        <div class="username">
+                            <label for="login-username">Username</label><br>
+                            <input type="text" id="login-username" name="login-username" required placeholder="username">
+                        </div>
+                        <div class="password">
+                            <label for="login-password">Password</label><br>
+                            <input type="password" id="login-password" name="login-password" required placeholder="password">
+                        </div>
+<!--                        <div class="click-login">-->
+                        <a href="javascript:void(0);" onclick = "document.forms['login-form'].submit();">Login</a>
+                    </form>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><a href="#login-form" rel="modal:open">login</a></li>
+                        <li><a href="#">sign-up</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="section">
+                <h1>
+                    Welcome to <span class="animate">Quizbook</span>.<br>
+                    Happy to see you!
+                </h1>
+            </div>
+        </section>
+    </body>
+</html>
