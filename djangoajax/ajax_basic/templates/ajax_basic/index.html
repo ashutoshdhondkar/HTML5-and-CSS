@@ -1,0 +1,73 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ajax</title>
+		<script src="{% static 'ajax_basic/jquery-3.3.1.min.js' %}"></script>
+		<script>
+			$(document).ready(function(){
+				$('input').on('click',function(){
+					$(this).addClass('newstyle');
+				});
+				$('input').on('mouseleave',function(){
+					$(this).removeClass('newstyle');
+				});
+			})
+			$(document).on('submit','#newform',function(e){
+				e.preventDefault();
+				$.ajax({
+					type : 'POST',
+					url: 'index.html',
+					data:{
+						name : $('#name').val(),
+						email : $('#email').val(),
+						password : $('#password').val(),
+					}
+					
+				});
+			});
+		</script>
+		<style>
+			.newstyle{
+				border-bottom:2px solid blue;
+			}
+			.header{
+				width:100%;
+				height:4cm;
+				background-color:#3b5998;
+				display: block;
+				box-sizing: border-box;
+			}
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			h1{
+				padding-top:2.5cm;
+				padding-left:10%;
+				color:white;
+			}
+			.main{
+				padding:10px;
+				margin:30px 40%;
+				background-color: lightblue;
+				outline: gray solid 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Ajax form submission using django</h1>
+		</div>
+		<div class="main">
+			<form id="newform" action="" method="POST">
+				<h2>New User</h2>
+				<input type="text" placeholder="name" name="name" id="name"><br><br>
+				<input type="email" placeholder="email" name="email" id="email"><br><br>
+				<input type="password" placeholder="password" name="password" id="password"><br><br>
+				<input type="submit" value="Submit" style="background-color: lightblue;">
+			</form>
+		</div>
+	</body>
+</html>
