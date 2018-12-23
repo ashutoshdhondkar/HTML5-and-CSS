@@ -2,6 +2,8 @@
 
 ## Client side language
 
+## contents
+* document.write 
 
 ` document.write("hello world"); 
 `
