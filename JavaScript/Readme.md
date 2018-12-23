@@ -4,7 +4,9 @@
 
 
 ` document.write("hello world"); 
-  document.write("<h1>Hello JavaScript</h1>");
+`
+`
+document.write("<h1>Hello JavaScript</h1>");
 ` 
 ## Grab the document and write the specified content
 
