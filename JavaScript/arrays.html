@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arrays</title>
+        <script type="text/javascript">
+            // make an array
+            var array_car = new Array("ferrari","porsh","jaguer","bmv","alto");
+            document.write(array_car);
+            for(i=0;i<array_car.length;i++){
+                document.write("<div>"+ array_car[i] +"</div>");
+            }
+            
+            // more about arrays
+            var new_array = new Array();
+            var data_inp = parseInt(prompt("Enter number of values : "));
+            while(data_inp!=0){
+    
+                data_inp.append(prompt("Enter term"));
+                data_inp--;
+            }
+            
+            for(i=0;i<data_inp.length;i++){
+                document.write(data_inp[i]);
+            }
+        </script>
+    </head>
+</html>

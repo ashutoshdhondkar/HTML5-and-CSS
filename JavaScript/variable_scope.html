@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scope of variable</title>
+        <script type="text/javascript">
+            var champ = "first"; // global
+            
+            function print_champ(){
+                
+                var scope_var = "inside function"; // local function
+                document.write(champ+" inside function<br>");
+                
+            }
+            
+            print_champ();
+            
+            document.write(champ + " outside function <br>");
+            
+            document.write(scope_var); // error
+        </script>
+    </head>
+</html>

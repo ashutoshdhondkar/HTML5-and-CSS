@@ -2,16 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>variables</title>
+        <title>Variables</title>
+        <script type="text/javascript">
+            
+            var undeclared; // uninitialized
+            
+            var name = "ashutosh"; // initialized
+            
+            document.write("<h1>"+name+"</h1>");
+            
+            /*
+                1) variables cannot start with a number
+                2) variables starting with _ is also valid
+                3) no blank spaces between variable name
+                4) not allowed to use any javascript keywords
+                5) variable name is case sesitive
+                6) * variable name is called an identifier *
+            */
+            
+            undeclared = "This is a new variable";
+            
+            document.write(undeclared+"<br><br>");
+            
+            document.write(typeof(undeclared));
+            
+        </script>
     </head>
-    <body>
-        <h1 align="center">Working with variables</h1>
-        <script>
-            var a = 4;
-            var A = 10;
-            document.write(a+A+"<br><br>");
-            var _abc = "WebDev";
-            document.write(_abc);
-        </script> 
-    </body>
 </html>

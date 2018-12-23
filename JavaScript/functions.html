@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Functions</title>
+        <script type="text/javascript">
+            // function without parameter
+            function first_function(){
+                
+                // code is here
+                document.write("<div>You are awesome!</div>");
+
+            }
+            
+            // function with parameters
+            
+            function second_function(data1){
+                document.write("<div>welcome "+data1+"</div>");
+                third_function(2,3,1);
+            }
+            
+            // functions with multiple parameters
+            
+            function third_function(data1,data2,data3){
+                document.write(data1,data2,data3);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="user-data">
+        <button type="button" onclick = "first_function();">Click</button>
+        <button type="button" onclick = "second_function(document.getElementById('user-data').value);">Click</button>
+        
+    </body>
+</html>
